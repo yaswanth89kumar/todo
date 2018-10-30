@@ -6,16 +6,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
+import { WorkoutComponent } from './workout/workout.component';
 
 let routes = [
-     {path: '',component: LoginComponent}
+     {path: '',component: WorkoutComponent},
+     {path: 'login',component: LoginComponent},
+     {path: 'workout',component: WorkoutComponent}
   ];
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    WorkoutComponent
   ],
   imports: [
     BrowserModule,
